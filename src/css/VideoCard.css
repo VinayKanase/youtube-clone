@@ -6,6 +6,7 @@
 .videoCard__thumbnail {
   height: 140px;
   width: 250px;
+  cursor: pointer;
 }
 .videoCard__info {
   display: flex;
@@ -26,4 +27,9 @@
 .videoCard__avatar {
   height: 30px !important;
   width: 30px !important;
+}
+
+.videoCard__channelName:hover {
+  color: rgb(70, 70, 70);
+  cursor: pointer;
 }

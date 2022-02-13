@@ -5,6 +5,7 @@ import RecommendedVideos from "./Components/RecommendedVideos";
 import SearchPage from "./Components/SearchPage";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import VideoPlayer from "./Components/VideoPlayer";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <Router>
         <Header />
         <Switch>
+          <Route path="/watch/:videoId">
+            <VideoPlayer />
+          </Route>
           <Route path="/search/:searchTerm">
             <div className="app__page">
               <Sidebar />
